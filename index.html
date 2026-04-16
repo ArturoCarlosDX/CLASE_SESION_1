@@ -1,17 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mi Página Sencilla</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <h1>Bienvenido a mi proyecto</h1>
-    <p>Proyecto colaborativo con GitHub</p>
-    <h2>Sección nueva agregada</h2>
-    <p>Esta sección fue creada en una rama</p> 
-    <h2>SENATI EL FUTURO</h2>
-    <p>CARRERA DE IG DE SOFTWARE CON INTELIGENCIA ARTIFIAL</p> 
 
+<body>
+    <!-- header -->
+    <header>
+        <h1>HOLA SOMOS EL FUTURO DEL PAIS (SENATIÑOS AL RESCATE DX)</h1>
+        <p>Bienvenidos a nuestro sitio web. Aquí encontrarás información sobre nuestros proyectos y actividades.</p>
+    </header>
+    <!-- body -->
+
+    <body>
+        <header>
+            <h1>🗳️ Sistema de Votación Electrónica</h1>
+            <p>Facultad de Ingeniería - ETI 2026</p>
+        </header>
+
+        <main>
+            <section id="instrucciones">
+                <h2>Bienvenido, Elizabeth</h2>
+                <p>Por favor, selecciona a tu candidato favorito para el consejo estudiantil.</p>
+            </section>
+
+            <section id="urna">
+                <div class="candidato-card">
+                    <img src="https://via.placeholder.com/100" alt="Candidato 1">
+                    <h3>Arturo García</h3>
+                    <p>Propuesta: Mejora de laboratorios de IA.</p>
+                    <button onclick="votar(1)">Votar</button>
+                </div>
+
+                <div class="candidato-card">
+                    <img src="https://via.placeholder.com/100" alt="Candidato 2">
+                    <h3>María López</h3>
+                    <p>Propuesta: Talleres de Git y GitHub.</p>
+                    <button onclick="votar(2)">Votar</button>
+                </div>
+            </section>
+
+            <section id="resultados">
+                <h2>Resultados Parciales</h2>
+                <div class="barra-progreso">
+                    <span>Arturo: 60%</span>
+                    <div style="width: 60%; background: #3498db; height: 10px;"></div>
+                </div>
+                <div class="barra-progreso">
+                    <span>María: 40%</span>
+                    <div style="width: 40%; background: #e74c3c; height: 10px;"></div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>Desarrollado para el curso de Complementación Práctica II</p>
+        </footer>
+    </body>
+    <!-- footer -->
+    <footer id="footer">
+        <p>Pie de Página - © 2023 Mi Sitio Web</p>
+    </footer>
 </body>
+
 </html>
